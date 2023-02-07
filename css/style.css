@@ -44,7 +44,6 @@
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 
 body {
@@ -153,12 +152,22 @@ body {
     border-bottom-right-radius: 5px;
 }
 
+.page-menu {
+    overflow-y: hidden;
+}
+
 .page-menu__list {
     margin-left: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
     display: flex;
-    width: max-content;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
 
+.page-menu__list::-webkit-scrollbar {
+    width: 0;
 }
 
 .page-menu__item {
@@ -166,6 +175,7 @@ body {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #7E7E82;
+    display: flex;
 }
 
 .page-menu__link {
