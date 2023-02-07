@@ -163,12 +163,12 @@ body {
     flex-wrap: nowrap;
     overflow-x: auto;
     white-space: nowrap;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
 }
 
-.page-menu__list::-webkit-scrollbar {
+/* .page-menu__list::-webkit-scrollbar {
     width: 0;
-}
+} */
 
 .page-menu__item {
     font-size: 16px;
