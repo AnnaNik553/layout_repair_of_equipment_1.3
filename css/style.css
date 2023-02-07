@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('../fonts/TTLakesCompressed-Regular.woff') format('woff'),
+        url('../fonts/TTLakesCompressed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakesCompressed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('../fonts/TTLakesCompressed-Medium.woff') format('woff'),
+        url('../fonts/TTLakesCompressed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakesCompressed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('../fonts/TTLakesCompressed-Bold.woff') format('woff'),
+        url('../fonts/TTLakesCompressed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakesCompressed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('TTLakesCompressed-Black.woff') format('woff'),
+        url('TTLakesCompressed-Black.eot?#iefix') format('embedded-opentype'),
+        url('TTLakesCompressed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    background-color: #F8F8F8;
+    font-family: 'TT Lakes Compressed', 'TT Lakes Condensed', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #FFFFFF;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.burger-button {
+    color: transparent;
+    background: url('../img/nav/burger.svg') no-repeat center center #FFFFFF;
+    width: 40px;
+    height: 40px;
+}
+
+.burger-button:focus,
+.repair-button:focus,
+.checkstatus-button:focus {
+    border: 2px solid #B8FFEC;
+    border-radius: 50%;
+}
+
+.main-menu {
+    display: none;
+}
+
+.logo {
+    width: 98px;
+    height: 52px;
+    border: 2px solid transparent;
+    padding: 2px;
+}
+
+.logo:focus {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}   
+
+.logo__img {
+    width: 100%;
+}
+
+.repair-button {
+    color: transparent;
+    background: url('../img/nav/repair.svg') no-repeat center center #FFFFFF;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-left: 15px;
+    border: 2px solid transparent;
+}
+
+.repair-button::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    transform: translateX(-50%);
+    background: #EAEAEA;
+    border-radius: 1px;
+    margin-left: -19px;
+}
+
+.checkstatus-button {
+    color: transparent;
+    background: url('../img/nav/checkstatus.svg') no-repeat center center #FFFFFF;
+    width: 40px;
+    height: 40px;
+}
+
+.page__title {
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.title {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+    color: #1B1C21;
+    font-weight: 700;
+    position: relative;
+    padding-left: 16px;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    background: #41F6D7;
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.page-menu__list {
+    margin-left: 16px;
+    margin-bottom: 32px;
+    display: flex;
+    width: max-content;
+
+}
+
+.page-menu__item {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+}
+
+.page-menu__link {
+    color: #7E7E82;
+    border: 2px solid transparent;
+    padding: 8px 10px;
+}
+
+.page-menu__link:hover,
+.page-menu__link:focus {
+    background: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.about {
+    position: relative;
+}
+
+/* Стили для текстового поля с кнопкой "Далее" */
+.about__limiter {
+    max-height: 73px;
+    overflow: hidden;
+    position: relative;
+    padding: 0 16px;
+    margin-bottom: 15px;
+}
+
+.about__text {
+    letter-spacing: 0.4px;
+    color: #1B1C21;
+    margin-bottom: 20px;
+}
+
+.about__text:last-of-type {
+    margin-bottom: 0;
+}
+
+.about__read-more-checker {
+    opacity: 0;
+}
+.about__read-more-checker:checked ~ .about__limiter {
+    max-height: none;
+}
+
+.about__read-more-checker ~ .about__read-more-button:before {
+    content: url('../img/main/downArrows.svg');
+    padding-right: 15px;
+}
+.about__read-more-checker:checked ~ .about__read-more-button:before {
+    content: url('../img/main/downArrows.svg');
+    display: inline-block;
+    transform: rotate(180deg) translateX(60%) translateY(5%);
+}
+.about__read-more-button {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #1B1C21;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.about__read-more-button:focus-within {
+    padding: 0 10px;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.about__img {
+    padding-bottom: 20px;
+}
+
