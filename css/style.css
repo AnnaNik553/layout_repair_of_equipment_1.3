@@ -117,6 +117,7 @@ body {
     background: #EAEAEA;
     border-radius: 1px;
     margin-left: -19px;
+    cursor: default;
 }
 
 .checkstatus-button {
@@ -157,7 +158,6 @@ body {
 }
 
 .page-menu__list {
-    margin-left: 16px;
     margin-bottom: 12px;
     display: flex;
     flex-wrap: nowrap;
@@ -176,6 +176,11 @@ body {
     letter-spacing: -0.2px;
     color: #7E7E82;
     display: flex;
+    margin-bottom: 5px;
+}
+
+.page-menu__item:first-child {
+    margin-left: 16px;
 }
 
 .page-menu__link {
@@ -250,5 +255,6 @@ body {
 
 .about__img {
     padding-bottom: 20px;
+    width: 100%;
 }
 
