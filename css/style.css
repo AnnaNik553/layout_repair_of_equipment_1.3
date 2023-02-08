@@ -325,6 +325,10 @@ body {
         padding: 0 40px 0 16px;
     }
 
+    .about__box {
+        width: 50%;
+    }
+
     .about__img {
         width: 50%;
         background: #F8F8F8;
