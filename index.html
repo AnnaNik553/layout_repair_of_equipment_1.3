@@ -10,52 +10,103 @@
     <title>CPS ремонт техники</title>
     <link rel="stylesheet" href="css/zero.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/menu.js"></script>
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <button type="button" title="Главное меню" class="img-button img-button--burger header__burger-button--margin burger-button--pseudo-element">Главное меню</button>
-            <a href="#" class="logo header__logo--margin"><img class="logo__img" src="img/nav/Logo.svg" alt="Логотип компании CPS"></a>
-            <button type="button" title="Заказать звонок" class="img-button img-button--call">Заказать звонок</button>
-            <button type="button" title="Обратная связь" class="img-button img-button--feedback">Обратная связь</button>
-            <button type="button" title="Личный кабинет" class="img-button img-button--profile">Личный кабинет</button>
-            <button type="button" title="Оставить заявку" class="img-button img-button--repair header__img-button--repair--margin img-button--repair--pseudo-element">Оставить заявку</button>
-            <button type="button" title="Статус ремонта" class="img-button img-button--checkstatus">Статус ремонта</button>
-        </header>
-        <main class="page">
-            <div class="top-box top-box--align--row page__top-box">
-                <h1 class="title top-box__title">Услуги и сервисы</h1>
-                <button type="button" title="Оставить заявку" class="text-button top-box__text-button top-box__text-button--margin text-button--pseudo--repair">Оставить заявку</button>
-                <button type="button" title="Статус ремонта" class="text-button top-box__text-button text-button--pseudo--check">Статус ремонта</button>
-            </div>
-            
-            <nav class="page-menu">
-                <ul class="page-menu__list">
-                    <li class="page-menu__item"><a autofocus href="#" class="page-menu__link">Ремонтируемые бренды</a>
-                    </li>
-                    <li class="page-menu__item"><a href="#" class="page-menu__link">Ремонтируемые устройства</a></li>
-                    <li class="page-menu__item"><a href="#" class="page-menu__link">Цены на услуги</a></li>
-                    <li class="page-menu__item"><a href="#" class="page-menu__link">Адреса сервисных центров</a></li>
-                    <li class="page-menu__item"><a href="#" class="page-menu__link">Специальные цены</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="response response--margins">Отзывы</a>
-            <section class="about about--align--row">
-                <h2 class="about__title visually-hidden">О нас</h2>
-                <div class="about__box">
-                    <input type="checkbox" class="about__read-more-checker" aria-labelledby="read-more" id="read-more-checker">
-                    <div class="about__limiter">
-                        <p class="about__text">Мы&nbsp;являемся авторизованным сервисным центром по&nbsp;ремонту техники Dell. Только у&nbsp;нас вы&nbsp;можете
-                            отремонтировать свой ноутбук Dell с&nbsp;официальной гарантией производителя.</p>
-                        <p class="about__text">Мы&nbsp;успешно работаем с&nbsp;1992 года и&nbsp;заслужили репутацию надежного партнера, что подтверждает большое
-                            количество постоянных клиентов. Мы&nbsp;гордимся тем, что к&nbsp;нам обращаются по&nbsp;рекомендациям&nbsp;и, в&nbsp;свою
-                            очередь, советуют нас родным и&nbsp;близким.</p>
+        <section class="site-nav">
+            <h2 class="site-nav__title visually-hidden">Навигация на сайте</h2>
+            <div class="site-nav__box site-nav__box--hidden">
+                <div class="site-nav__wrapper">
+                    <div class="site-nav__top">
+                        <button type="button" title="Главное меню"
+                            class="img-button img-button--burger-close site-nav__img-button--margin">Главное меню</button>
+                        <a href="#" class="logo site-nav__logo--margin-right--auto"><img class="logo__img"
+                                src="img/nav/Logo.svg" alt="Логотип компании CPS" width="97" height="51"></a>
+                        <button type="button" title="Поиск" class="img-button img-button--search">Поиск</button>
                     </div>
-                    <label for="read-more-checker" class="about__read-more-button" id="read-more">Читать далее</label>
+                    <nav class="main-menu site-nav__main-menu--grow">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__item"><a autofocus href="#" class="main-menu__link">Ремонт техники</a>
+                            </li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Услуги и сервисы</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Корпоративным клиентам</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Продавцам техники</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Партнерам</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Производителям</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Наши сервисные центры</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="site-nav__btn-box">
+                        <button type="button" title="Заказать звонок" class="img-button img-button--call site-nav__img-button--margin">Заказать
+                            звонок</button>
+                        <button type="button" title="Обратная связь" class="img-button img-button--feedback site-nav__img-button--margin">Обратная
+                            связь</button>
+                        <button type="button" title="Личный кабинет" class="img-button img-button--profile">Личный
+                            кабинет</button>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__box">
+                            <a href="mailto:mail@cps.com" class="contact__mail">mail@cps.com</a>
+                            <a href="tel:+78008908900" class="contact__tel">8 800 890 8900</a>
+                        </div>
+                    </div>
+                    <div class="lang">
+                        <ul class="lang__list">
+                            <li class="lang__item"><button class="lang__btn lang__btn--active"><span>RU</span></button></li>
+                            <li class="lang__item"><button class="lang__btn"><span>EN</span></button></li>
+                            <li class="lang__item"><button class="lang__btn"><span>CH</span></button></li>
+                        </ul>
+                    </div>
                 </div>
-                <img src="img/main/MG3223L.jpg" alt="Фото логотипа компании CPS" class="about__img">
-            </section>
-        </main>
+            </div>
+        </section>
+        <div class="content">
+            <header class="header">
+                <button type="button" title="Главное меню" class="img-button img-button--burger header__burger-button--margin burger-button--pseudo-element">Главное меню</button>
+                <a href="#" class="logo header__logo--margin"><img class="logo__img" src="img/nav/Logo.svg" alt="Логотип компании CPS" width="97" height="51"></a>
+                <button type="button" title="Заказать звонок" class="img-button img-button--call img-button--hidden">Заказать звонок</button>
+                <button type="button" title="Обратная связь" class="img-button img-button--feedback img-button--hidden">Обратная связь</button>
+                <button type="button" title="Личный кабинет" class="img-button img-button--profile img-button--hidden">Личный кабинет</button>
+                <button type="button" title="Оставить заявку" class="img-button img-button--repair header__img-button--repair--margin img-button--repair--pseudo-element">Оставить заявку</button>
+                <button type="button" title="Статус ремонта" class="img-button img-button--checkstatus">Статус ремонта</button>
+            </header>
+            <main class="page">
+                <div class="top-box top-box--align--row page__top-box">
+                    <h1 class="title top-box__title">Услуги и сервисы</h1>
+                    <button type="button" title="Оставить заявку" class="text-button top-box__text-button top-box__text-button--margin text-button--pseudo--repair">Оставить заявку</button>
+                    <button type="button" title="Статус ремонта" class="text-button top-box__text-button text-button--pseudo--check">Статус ремонта</button>
+                </div>
+                
+                <nav class="page-menu">
+                    <ul class="page-menu__list">
+                        <li class="page-menu__item"><a autofocus href="#" class="page-menu__link">Ремонтируемые бренды</a>
+                        </li>
+                        <li class="page-menu__item"><a href="#" class="page-menu__link">Ремонтируемые устройства</a></li>
+                        <li class="page-menu__item"><a href="#" class="page-menu__link">Цены на услуги</a></li>
+                        <li class="page-menu__item"><a href="#" class="page-menu__link">Адреса сервисных центров</a></li>
+                        <li class="page-menu__item"><a href="#" class="page-menu__link">Специальные цены</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="response response--margins">Отзывы</a>
+                <section class="about about--align--row">
+                    <h2 class="about__title visually-hidden">О нас</h2>
+                    <div class="about__box">
+                        <input type="checkbox" class="about__read-more-checker" aria-labelledby="read-more" id="read-more-checker">
+                        <div class="about__limiter">
+                            <p class="about__text">Мы&nbsp;являемся авторизованным сервисным центром по&nbsp;ремонту техники Dell. Только у&nbsp;нас вы&nbsp;можете
+                                отремонтировать свой ноутбук Dell с&nbsp;официальной гарантией производителя.</p>
+                            <p class="about__text">Мы&nbsp;успешно работаем с&nbsp;1992 года и&nbsp;заслужили репутацию надежного партнера, что подтверждает большое
+                                количество постоянных клиентов. Мы&nbsp;гордимся тем, что к&nbsp;нам обращаются по&nbsp;рекомендациям&nbsp;и, в&nbsp;свою
+                                очередь, советуют нас родным и&nbsp;близким.</p>
+                        </div>
+                        <label for="read-more-checker" class="about__read-more-button" id="read-more">Читать далее</label>
+                    </div>
+                    <img src="img/main/MG3223L.jpg" alt="Фото логотипа компании CPS" class="about__img">
+                </section>
+            </main>
+        </div>
     </div>
 </body>
 </html>
